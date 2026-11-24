@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Exploratory Tester · Willem Larsen</title>
+<meta name="description" content="One ongoing issue I have as I continue to grow more safety and quality into the Clickchain.AI governance platform, is that I&#x27;m not always sure which behavi">
+<style>
+  :root { --bg:#fbfaf7; --fg:#1d1c1a; --muted:#5e5a54; --rule:#e3dfd7; --accent:#2f5d50; --card:#ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141413; --fg:#ecebe7; --muted:#a8a49c; --rule:#2c2b28; --accent:#8cc7b4; --card:#1c1b19; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:18px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 72px; }
+  nav { font-size:0.95rem; margin-bottom:28px; }
+  a { color:var(--accent); text-underline-offset:3px; }
+  h1 { font-size:2.1rem; line-height:1.15; margin:0 0 6px; letter-spacing:-0.01em; }
+  h2 { font-size:1.15rem; margin:28px 0 6px; }
+  .date { color:var(--muted); margin:0 0 22px; font-size:0.95rem; }
+  img { width:100%; height:auto; border-radius:10px; border:1px solid var(--rule); margin:0 0 24px; }
+  ul.notes { list-style:none; padding:0; margin:0; display:grid; gap:14px; }
+  ul.notes li { background:var(--card); border:1px solid var(--rule); border-radius:10px; padding:14px 16px; }
+  ul.notes span { color:var(--muted); font-size:0.95rem; display:block; }
+  .about { color:var(--muted); font-size:0.95rem; border-top:1px solid var(--rule); margin-top:40px; padding-top:18px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="../">Willem Larsen</a> · <a href="./">Field notes</a></nav>
+  <h1>The Exploratory Tester</h1>
+  <p class="date">November 8, 2026</p>
+  <img src="img/exploratory-tester.jpg" alt="Cartoon of people, robots and a cat gathered round a laptop trying to break what they built, beside a checklist: explore, probe edge cases, find risks." width="1312" height="1199">
+  <p>One ongoing issue I have as I continue to grow more safety and quality into the Clickchain.AI governance platform, is that I'm not always sure which behaviors the governed agents display are part of the platform substrate, and which are emergent habits.</p>
+  <p>📜 For example, one day long ago I began to notice, that <em>consistently</em> after autonomously finishing the initial build of a test-driven, thoroughly refactored feature, the tech coach agent (we call her Amaya) coached an exploratory tester agent through trying to break what we had just built. Tweaking this, flipping that, generally trying to see if they could make something go awry.</p>
+  <p>This then continued happening in feature after feature. AND, the exploratory tester was finding holes, bugs, all kinds of good stuff, and fixes were getting folded into the work. This was great!</p>
+  <p>💭 I had to scratch my head - did I build that exploratory tester? I couldn't remember. 💭</p>
+  <p>In dialogue with the agent I discovered that Amaya had started including an exploratory testing phase <em>inspired by a conversation we had about running mutation testing suites</em>. The idea that you could purposely try to break what you had built, to see if any test was triggered, was generalized into this exploratory testing approach.</p>
+  <p>✨ It was delightful! So I incorporated that into the platform, and now we have exploratory testers making sure everything we ship is as rugged and resilient as possible, that it can "survive contact with the customer" 🤣</p>
+  <p>🤔 Now the moral of the story - why did this emergence happen? Why did a simple conversation about mutation testing turn into this wonderful new behavior? There is one central reason for it, but also first I want to address this idea of agentic creativity and emergence.</p>
+  <p>There's a lot of sermonizing by self-appointed experts in tech about how AI is not creative. This is a self-limiting belief. AI is creative in exactly the way we need it to be.</p>
+  <p>When we make sure a problem space is clean, and the win conditions are clear, emergent behaviors consistently arise in that space that I, the system designer, hadn't thought of yet, or in that way. Some are a great fit. Some are off, and not so great.</p>
+  <p>Because I've designed/grown a system with minimal noise (in software dev, "no rework" and minimal friction to flow of value), I can identify when a new behavior emerges that I like and capture it. Conversely I can see when a new behavior emerges that <em>I don't like</em> and coach/enforce against it.</p>
+  <p>And that's the story of how Clickchain agentic ensembles came to include AI exploratory testers!</p>
+  <p class="about">Field notes from my work at <a href="https://clickchain.ai">ClickChain AI</a>, first posted on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7525236655524302848/">LinkedIn</a>. I write the notes by hand; the images are made with AI.</p>
+</main>
+</body>
+</html>
