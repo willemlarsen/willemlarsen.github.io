@@ -1,0 +1,80 @@
+/* Storybook style, matched to Willem's field-note illustrations:
+   warm parchment, forest and navy ink, gold trim, soft rounded type. Light only. */
+:root {
+  --parchment: #f6eedb;
+  --paper: #fffaf0;
+  --ink: #2a2a33;
+  --muted: #6a6258;
+  --forest: #35634a;
+  --navy: #1f2b45;
+  --gold: #c8963e;
+  --rust: #a4532d;
+  --rule: #e3d5b4;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { background: var(--parchment); }
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #fbf4e3 0%, transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, #f1e4c6 0%, transparent 55%),
+    var(--parchment);
+  color: var(--ink);
+  font: 18px/1.7 "Nunito", "Avenir Next", "Segoe UI", sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 40px 20px 0; }
+a { color: var(--forest); text-decoration-color: var(--gold); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+a:hover { color: var(--rust); }
+
+h1, h2, h3, .banner, nav { font-family: "Fraunces", Georgia, serif; }
+h1 { font-size: 2.6rem; line-height: 1.1; margin: 0 0 8px; color: var(--navy); font-weight: 700; letter-spacing: -0.01em; }
+h2 {
+  font-size: 1.05rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--navy);
+  margin: 44px 0 16px; display: flex; align-items: center; gap: 12px;
+}
+h2::before, h2::after { content: ""; height: 2px; background: var(--gold); flex: 1; opacity: 0.7; }
+article h2, .note h2 { text-transform: none; letter-spacing: 0; font-size: 1.3rem; display: block; margin: 30px 0 6px; }
+article h2::before, article h2::after, .note h2::before, .note h2::after { display: none; }
+
+.role { color: var(--muted); font-size: 1.1rem; margin: 0 0 24px; font-style: italic; }
+.lede { font-size: 1.3rem; font-family: "Fraunces", Georgia, serif; color: var(--navy); margin: 0 0 16px; }
+
+.hero { display: block; width: 100%; height: auto; border-radius: 16px; border: 3px solid var(--paper);
+        box-shadow: 0 6px 24px rgba(60, 40, 10, 0.18); margin: 8px 0 28px; }
+
+ul.cards, ul.notes { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+ul.cards li, ul.notes li {
+  background: var(--paper); border: 1px solid var(--rule); border-radius: 14px; padding: 16px 18px;
+  box-shadow: 0 2px 0 var(--rule), 0 8px 18px rgba(60, 40, 10, 0.06);
+}
+ul.cards strong, ul.notes strong { display: block; margin-bottom: 4px; font-family: "Fraunces", Georgia, serif; font-size: 1.1rem; }
+ul.cards span, ul.notes span { color: var(--muted); font-size: 0.97rem; display: block; }
+ul.notes li { display: grid; grid-template-columns: 96px 1fr; gap: 14px; align-items: center; }
+ul.notes img { width: 96px; height: 96px; object-fit: cover; border-radius: 10px; border: 2px solid var(--paper);
+               box-shadow: 0 2px 8px rgba(60, 40, 10, 0.15); margin: 0; }
+ul.plain { padding-left: 1.1em; margin: 0; }
+ul.plain li { margin-bottom: 8px; }
+ul.plain li::marker { color: var(--gold); }
+
+nav { font-size: 1rem; margin-bottom: 26px; }
+.date { color: var(--muted); margin: 0 0 22px; font-style: italic; }
+.note img.art { width: 100%; height: auto; border-radius: 16px; border: 3px solid var(--paper);
+                box-shadow: 0 6px 24px rgba(60, 40, 10, 0.18); margin: 0 0 26px; }
+.note p { margin: 0 0 16px; }
+.note ol li::marker { color: var(--gold); font-weight: 700; }
+.about { color: var(--muted); font-size: 0.95rem; border-top: 2px dotted var(--gold); margin-top: 40px; padding-top: 18px; }
+.contact a { margin-right: 18px; white-space: nowrap; }
+
+footer.banner {
+  margin-top: 56px; background: var(--navy); color: #f3e6c4; text-align: center;
+  padding: 16px 20px; font-size: 0.95rem; letter-spacing: 0.08em; text-transform: uppercase;
+  border-top: 4px solid var(--gold);
+}
+footer.banner a { color: #f3e6c4; }
+
+@media (max-width: 520px) {
+  h1 { font-size: 2.1rem; }
+  ul.notes li { grid-template-columns: 64px 1fr; }
+  ul.notes img { width: 64px; height: 64px; }
+}
