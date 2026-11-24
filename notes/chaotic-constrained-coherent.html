@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Three Kinds of Agentic AI System Design: Chaotic, Constrained and Coherent · Willem Larsen</title>
+<meta name="description" content="1. Chaotic Systems
+  This is where vibe coding lives. The agents display rapid, verbose output that overwhelms the user. Often walls of text/code are given">
+<style>
+  :root { --bg:#fbfaf7; --fg:#1d1c1a; --muted:#5e5a54; --rule:#e3dfd7; --accent:#2f5d50; --card:#ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#141413; --fg:#ecebe7; --muted:#a8a49c; --rule:#2c2b28; --accent:#8cc7b4; --card:#1c1b19; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:18px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 72px; }
+  nav { font-size:0.95rem; margin-bottom:28px; }
+  a { color:var(--accent); text-underline-offset:3px; }
+  h1 { font-size:2.1rem; line-height:1.15; margin:0 0 6px; letter-spacing:-0.01em; }
+  h2 { font-size:1.15rem; margin:28px 0 6px; }
+  .date { color:var(--muted); margin:0 0 22px; font-size:0.95rem; }
+  img { width:100%; height:auto; border-radius:10px; border:1px solid var(--rule); margin:0 0 24px; }
+  ul.notes { list-style:none; padding:0; margin:0; display:grid; gap:14px; }
+  ul.notes li { background:var(--card); border:1px solid var(--rule); border-radius:10px; padding:14px 16px; }
+  ul.notes span { color:var(--muted); font-size:0.95rem; display:block; }
+  .about { color:var(--muted); font-size:0.95rem; border-top:1px solid var(--rule); margin-top:40px; padding-top:18px; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="../">Willem Larsen</a> · <a href="./">Field notes</a></nav>
+  <h1>The Three Kinds of Agentic AI System Design: Chaotic, Constrained and Coherent</h1>
+  <p class="date">November 5, 2026</p>
+  <img src="img/chaotic-constrained-coherent.jpg" alt="Three dogs: a frantic terrier labelled Chaotic, a listless retriever labelled Constrained, and a focused border collie labelled Coherent." width="1400" height="933">
+  <h2>1. Chaotic Systems</h2>
+  <p>This is where vibe coding lives. The agents display rapid, verbose output that overwhelms the user. Often walls of text/code are given to review and accepted on faith. The human user can feel a rush of energy and glee at the productivity of the agents - the reality of rework and maintenance costs hasn't set in yet.</p>
+  <p>The agent is like a high-energy dog that basically runs the household it lives in.</p>
+  <h2>2. Constrained</h2>
+  <p>This is often the first reaction to Chaotic systems by a human designer. Rules are bolted on, coercive language is used, there is a constant effort to give the agents less and less opportunity to use their own judgement to solve problems, and to limit their tool access.</p>
+  <p>The system produces nominally good outcomes, but requires a tremendous amount of human oversight - the "babysitting" problem. It's never going to scale. Also, periodically, the agent still manages to make very concerning errors in spite of all the constraints, further confirming to the HITL (human-in-the-loop) that the agents can't be trusted.</p>
+  <p>The agent is like the family pet that barely looks up when someone is at the door, the tail wagging listlessly. They follow the owner quietly from room to room. Every once in a while out of panic they bite someone.</p>
+  <h2>3. Coherent</h2>
+  <p>This is where you hope your systems get to - agents are presumed to be acting on good faith and at the same time to be fallible. Both realities are held and accommodated for in the system. A set of insightful guardrails feed enforcement of those guardrails continuously at build time.</p>
+  <p>Because the system has a continuous, reliable flow, agent orchestrators begin to observe system behaviors and use their own judgement to improve the flow and quality of work.</p>
+  <p>The agent is like a deeply content working dog, a shepherd or border collie with daily duties that are clear and accomplished with razor like clarity and collaboration.</p>
+  <p>That'll do, pig. 🐷</p>
+  <p class="about">Field notes from my work at <a href="https://clickchain.ai">ClickChain AI</a>, first posted on <a href="https://www.linkedin.com/feed/update/urn:li:activity:7524154148305674240/">LinkedIn</a>. I write the notes by hand; the images are made with AI.</p>
+</main>
+</body>
+</html>
